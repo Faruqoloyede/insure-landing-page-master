@@ -1,0 +1,171 @@
+:root {
+    --first: hsl(256, 26%, 20%);
+    --second: hsl(216, 30%, 68%);
+    --third: hsl(270, 9%, 17%);
+    --forth: hsl(273, 4%, 51%);
+    --fifth: hsl(0, 0%, 98%);
+}
+* {
+    list-style-type: none;
+}
+img {
+    width: 100%;
+}
+
+.navbar {
+    background: var(--fifth);
+}
+
+.link {
+    border: 1px solid var(--first);
+    margin-left: 1rem;
+}
+.link:hover {
+    background-color: var(--third);
+    color: var(--fifth);
+}
+.showcase {
+   background-color: var(--third);
+   background-image: url('./img/bg-pattern-intro-right-desktop.svg');
+   background-repeat: no-repeat;
+   background-position: top right;
+   background-size: contain;
+   height: 400px;
+}
+.btn {
+    color: var(--fifth);
+    text-decoration: none;
+    border: 1px solid var(--fifth);
+    border-radius: 0px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: var(--fifth);
+    color: var(--first);
+}
+.pic {
+    position: absolute;
+    height: aut0;
+    width: 30%;
+    margin-left: 50%;
+    margin-top: 10%;
+    z-index: 999;
+}
+.line {
+    width: 100px;
+    height: 1px;
+    background-color: var(--fifth);
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.card img{
+    width: 20%;
+}
+.card {
+    border: none;
+}
+.about {
+    background:url('./img/bg-pattern-intro-left-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    background-color: var(--fifth);
+}
+
+.box {
+    background: url('./img/bg-pattern-how-we-work-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-color: var(--third);
+}
+
+.button {
+    text-decoration: none;
+    border: 1px solid var(--fifth);
+    color: var(--fifth);
+}
+.button:hover {
+    background-color: var(--fifth);
+    color: var(--first);
+}
+.footer {
+    background-color:rgb(241, 234, 224);
+}
+.logo img{
+    width: 100%;
+}
+
+.social a img {
+    width: 20%;
+}
+
+@media (max-width:768px) {
+    .navmenu {
+        position: absolute;
+        background-image: url('./img/bg-pattern-mobile-nav.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: var(--third);
+        margin-top: 10px;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        width: 100%;
+        overflow-x: hidden;
+        z-index: 10;
+    }    
+
+    .navmenu li a {
+        color: var(--fifth);
+        text-align: center;
+        font-size: 20px;
+        padding-top: 20px;
+        margin-bottom: 2rem;
+    }
+    .navmenu li .link {
+        border: 2px solid var(--fifth);
+        margin-top: 10px;
+        
+    }
+    .hero {
+        background: url('./img/image-intro-mobile.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+    }
+    
+    .line {
+        display: none;
+    }
+    .about {
+        background:url('./img/bg-pattern-intro-left-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+    .showcase {
+        background-color: var(--third);
+        background-image: url('./img/bg-pattern-intro-right-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: contain;
+    }
+     .box {
+        background: url('./img/bg-pattern-how-we-work-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        background-color: var(--third);
+    }
+    .logo img{
+        width: 30%;
+    }
+    
+    .social a img {
+        width: 5%;
+    }
+}
