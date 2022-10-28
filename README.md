@@ -5,3 +5,4 @@ This is a solution to the [Insure landing page challenge on Frontend Mentor](htt
 ## Table of contents
 
 built with bootstrap and css
+![active-states](https://user-images.githubusercontent.com/110859825/198717901-c9cd13e8-3cf5-469f-b451-41075c032a9c.jpg)
